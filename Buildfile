@@ -15,8 +15,8 @@ repositories.remote << "http://www.ibiblio.org/maven2/"
 repositories.remote << Buildr::Bnd.remote_repository
 repositories.remote << Buildr::Ipojo.remote_repository
 
-OSGI_CORE = Buildr::OSGi::OSGI_CORE
-OSGI_COMPENDIUM = Buildr::OSGi::OSGI_COMPENDIUM
+OSGI_CORE = 'org.apache.felix:org.osgi.core:jar:1.4.0'
+OSGI_COMPENDIUM = 'org.apache.felix:org.osgi.compendium:jar:1.4.0'
 IPOJO_ANNOTATIONS = Buildr::Ipojo.annotation_artifact
 
 class CentralLayout < Layout::Default
