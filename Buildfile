@@ -49,6 +49,7 @@ define_with_central_layout( "osgiui", true, false) do
     project.ipojoize!
     package(:bundle).tap do |bnd|
       bnd['Bundle-Activator'] = "osgiui.framework.Launcher"
+      bnd['Export-Package'] = "osgiui.*;version=#{version}"
     end
   end
 end
